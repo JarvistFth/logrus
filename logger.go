@@ -91,7 +91,7 @@ func New() *Logger {
 		Hooks:        make(LevelHooks),
 		Level:        InfoLevel,
 		ExitFunc:     os.Exit,
-		ReportCaller: false,
+		ReportCaller: true,
 	}
 }
 

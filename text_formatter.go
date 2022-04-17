@@ -16,7 +16,8 @@ import (
 const (
 	red    = 31
 	yellow = 33
-	blue   = 36
+	green  = 32
+	blue   = 34
 	gray   = 37
 )
 

@@ -59,19 +59,19 @@ func (level *Level) UnmarshalText(text []byte) error {
 func (level Level) MarshalText() ([]byte, error) {
 	switch level {
 	case TraceLevel:
-		return []byte("trace"), nil
+		return []byte("TRACE"), nil
 	case DebugLevel:
-		return []byte("debug"), nil
+		return []byte("DEBUG"), nil
 	case InfoLevel:
-		return []byte("info"), nil
+		return []byte("INFO"), nil
 	case WarnLevel:
-		return []byte("warning"), nil
+		return []byte("WARN"), nil
 	case ErrorLevel:
-		return []byte("error"), nil
+		return []byte("ERROR"), nil
 	case FatalLevel:
-		return []byte("fatal"), nil
+		return []byte("FATAL"), nil
 	case PanicLevel:
-		return []byte("panic"), nil
+		return []byte("PANIC"), nil
 	}
 
 	return nil, fmt.Errorf("not a valid logrus level %d", level)
